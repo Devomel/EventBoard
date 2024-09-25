@@ -28,4 +28,4 @@ const start = async () => {
     console.log(error)
   }
 }
-start()
+export { app, start };
