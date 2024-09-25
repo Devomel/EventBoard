@@ -28,5 +28,4 @@ const start = async () => {
     console.log(error)
   }
 }
-start()
-export { app, start };
+module.exports = app;
