@@ -13,17 +13,14 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello, TypeScript with Express!');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
-const start = () => {
+
+const start = async () => {
   try {
     if (!mongoURI) {
       throw new Error('DB_URL is not defined in the environment variables');
     }
-
-
-    mongoose.connect(mongoURI)
+    await mongoose.connect(mongoURI)
+    console.log("connected to db")
   } catch (error) {
     console.log(error)
   }
