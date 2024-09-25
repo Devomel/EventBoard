@@ -23,7 +23,13 @@ const start = async () => {
     app.listen(PORT, () => {
       console.log(`Server is running on http://localhost:${PORT}`);
     });
-
+    app.get('/events', (req: Request, res: Response) => {
+      const events = [
+        { id: 1, title: 'Event 1', description: 'Description for event 1', date: '2024-09-25' },
+        { id: 2, title: 'Event 2', description: 'Description for event 2', date: '2024-09-26' },
+      ];
+      res.json(events);
+    });
   } catch (error) {
     console.log(error)
   }
