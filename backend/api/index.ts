@@ -15,7 +15,7 @@ const start = async () => {
     if (!mongoURI) {
       throw new Error('DB_URL is not defined in the environment variables');
     }
-    await mongoose.connect(mongoURI)
+    // await mongoose.connect(mongoURI)
     app.get('/', (req: Request, res: Response) => {
       res.send('Hello, TypeScript with Express!');
     });
