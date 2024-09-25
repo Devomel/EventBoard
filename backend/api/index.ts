@@ -1,11 +1,15 @@
 import express, { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import dotenv from "dotenv"
+import cors from "cors"
 const app = express();
 const PORT = process.env.PORT || 3000;
 dotenv.config();
 app.use(express.json());
-
+app.use(cors({
+  origin: "http://localhost:5173",
+  credentials: true
+}))
 
 const mongoURI = process.env.DB_URL;
 
