@@ -1,8 +1,8 @@
 # EventBoard
 
-# Middle level 
+## Middle level 
 
-# [Deploy](https://event-board-three.vercel.app/events)
+## [Deploy](https://event-board-three.vercel.app/events)
 ## Використані технології
 
 - React
