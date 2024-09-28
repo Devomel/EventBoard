@@ -1,5 +1,5 @@
 body {
-  background: url("/frontend/public/bg4.svg") no-repeat;
+  background: url("/bg4.svg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 20px;
