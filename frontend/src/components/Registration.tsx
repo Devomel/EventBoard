@@ -42,7 +42,7 @@ const Registration: FC<RegistrationProps> = ({ }) => {
         <h1>Event registration</h1>
 
         <div>
-          <label htmlFor="fullName">Full name</label>
+          <label htmlFor="fullName"> Full name</label>
           <input
             type="text"
             name="fullName"
@@ -52,7 +52,7 @@ const Registration: FC<RegistrationProps> = ({ }) => {
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email"> Email</label>
           <input
             type="email"
             name="email"
@@ -62,7 +62,7 @@ const Registration: FC<RegistrationProps> = ({ }) => {
         </div>
 
         <div>
-          <label htmlFor="dateOfBirth">Date of birth</label>
+          <label htmlFor="dateOfBirth"> Date of birth</label>
           <input
             type="date"
             name="dateOfBirth"
